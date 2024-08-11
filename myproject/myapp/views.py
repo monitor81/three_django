@@ -23,8 +23,8 @@ def login_view(request):
     #         return HttpResponse("Invalid login")
     # return render(request, 'myapp/login.html')
 
-# def logout_view(request):
-#     logout(request)
-#     response = HttpResponse("Logged out")
-#     response.delete_cookie('username')
-#     return response
+def logout_view(request):
+    logout(request)
+    response = HttpResponse("Logged out")
+    response.delete_cookie('username')
+    return response
