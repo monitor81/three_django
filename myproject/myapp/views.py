@@ -29,7 +29,7 @@ def login_view(request):
 
 def logout_view(request):
     logout(request)
-    # response = HttpResponse("Logged out")
-    # response.delete_cookie('username')
+    response = HttpResponse("Logged out")
+    response.delete_cookie('username')
     return HttpResponse("Logged out")
     
